@@ -11,7 +11,7 @@ let game = {
     setOptions() {
         while (!(options.fieldSize >= 3)) 
         options.fieldSize = prompt('Введите ширину игрового поля (не менее 3 клеток)', 3);
-        while (!(options.winStack >= 3 && options.winStack <= options.fieldSize))
+        while (!(options.winStack >= 3 && options.winStack <= +options.fieldSize))
         options.winStack = prompt(`Введите длину линии для победы (не менее 3 и не более ширины поря [${options.fieldSize}])`, 3);
 
     },
@@ -59,7 +59,6 @@ let game = {
                         self.verCheck(targetY, targetX);
                         self.diagDownCheck(targetY, targetX);
                         self.diagUpCheck(targetY, targetX);
-                        // console.log(gameArr[targetY][targetX]);
                         self.changeTurn();
                         return;
                     }
@@ -193,10 +192,9 @@ let game = {
         return onGame;
     }
 }
-game.setOptions();
-console.dir(options);
 
 let gameBlock = document.querySelector('.gameBlock');
+game.setOptions();
 game.createArr();
 game.createField();
 game.createEvent();

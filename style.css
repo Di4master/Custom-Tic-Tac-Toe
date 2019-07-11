@@ -35,6 +35,5 @@ body {
     font-family: Arial;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     line-height: 45px;
 }
