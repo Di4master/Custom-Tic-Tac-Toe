@@ -1,0 +1,40 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #131313;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameBlock {
+    background: lightgray;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background: #131313;
+    color: lightgray;
+    margin: 4px;
+    font-size: 85px;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    line-height: 45px;
+}
