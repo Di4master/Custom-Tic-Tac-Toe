@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Custom X|O PvP</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="gameBlock"></div>
+        <div class="game-block game-block--display-none"></div>
     </div>
-    <script src="script.js"></script>
+    <div class="menu">
+        <div class="menu__body">
+            <div class="menu__message">Custom X|O PvP</div>
+            <div class="menu__settings">
+                <form id="new-game" action="">
+                    <div class="menu__field-size">Ширина игрового поля</div>
+                    <input type="number" min="3" max="99" autocomplete="off" value="3" id="input-field" required>
+                    <div class="menu__line-size">Длина победной линии</div>
+                    <div class="menu__sub-line-size">(не может быть > ширины поля)</div>
+                    <input type="number" min="3" max="3" autocomplete="off" value="3" id="input-line" required>
+                    <button type="submit">Новая игра</button>
+                </form>
+            </div>
+        </div>
+        <div class="menu__btn-toggle"></div>
+    </div>
+    <script src="game.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
