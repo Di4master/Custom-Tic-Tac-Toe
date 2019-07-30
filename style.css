@@ -70,16 +70,14 @@ body {
 
 .menu__message {
     padding: 15px 0;
+    margin-bottom: 15px;
     color: #131313;
     font-weight: bold;
     font-size: 1.3em;
     border-bottom: 3px solid #131313;
 }
 
-.menu__field-size {
-    margin-top: 15px;
-}
-.menu__sub-line-size {
+.menu__input-sub-title {
     font-size: 0.7em;
 }
 

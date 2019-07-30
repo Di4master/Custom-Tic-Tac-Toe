@@ -16,11 +16,11 @@
             <div class="menu__message">Custom X|O PvP</div>
             <div class="menu__settings">
                 <form id="new-game" action="">
-                    <div class="menu__field-size">Ширина игрового поля</div>
-                    <input type="number" min="3" max="99" autocomplete="off" value="3" id="input-field" required>
-                    <div class="menu__line-size">Длина победной линии</div>
-                    <div class="menu__sub-line-size">(не может быть > ширины поля)</div>
-                    <input type="number" min="3" max="3" autocomplete="off" value="3" id="input-line" required>
+                    <div class="menu__input-title">Ширина игрового поля</div>
+                    <input type="number" id="input-field" min="3" max="99" autocomplete="off" value="3" required>
+                    <div class="menu__input-title">Длина победной линии</div>
+                    <div class="menu__input-sub-title">(не может быть > ширины поля)</div>
+                    <input type="number" id="input-line" min="3" max="3" autocomplete="off" value="3" required>
                     <button type="submit">Новая игра</button>
                 </form>
             </div>
